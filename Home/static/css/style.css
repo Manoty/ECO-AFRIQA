@@ -1,40 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
 
 
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 
 }
-section{
-    position:relative;
-    width:100%;
+
+section {
+    position: relative;
+    width: 100%;
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     /*background: url(../images/Sustainable\ agriculture_\ Eco\ friendly\ farming\ Precision\ agriculture_\ Organic\ farming_.jpeg) no-repeat;*/
     background-size: cover;
     background-position: center;
 }
-header{
+
+header {
     position: relative;
     top: 0;
     width: 100%;
-    padding:30px 100px ;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.row{
-margin-left: 0px;
-margin-right: 0px;
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #191a2b;
+
 }
-.global{
-    padding:50px;
+
+.service-wrapper {
+    padding: 5% 8%;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4, 52, 83);
+    background: linear-gradient(8deg, rgba(8, 52, 83, 1) 0%, rgba(0, 230, 173, 1), 41%, rgba(41, 17, 45, 1)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+h1:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    height: 8px;
+    width: 80%;
+    border-radius: 50%;
+    background-color: rgba(255 255, 255, 0.05);
+
+}
+
+h1 span {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #72e2ae;
+    animation: anim 5s linear infinite;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+
+
+}
+
+.card {
+    height: 350px;
+    width: 370px;
+    background-color: #1c2335;
+    padding: 3% 8%;
+    border: 0.2px solid rgb(114, 226, 174, 0.2);
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: #fff;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+
+}
+
+.card:hover:after {
+    width: 225;
+    top: -100%;
+}
+
+.card i {
+    color: #72e2ae;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+}
+
+.card h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card p {
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.card:hover {
+    background-color: transparent;
+    transform: translateY(-8px);
+    border-color: #00ff37;
+
+}
+
+.card:hover i {
+    color: #00ff37;
+
+}
+
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.global {
+    padding: 50px;
     color: #f0f9ff;
     margin-top: 80px;
     background-image: url(../images/download\ \(6\).jpeg);
@@ -43,11 +179,12 @@ margin-right: 0px;
     background-size: cover;
     opacity: 0.9;
 }
-.global .curve{
+
+.global .curve {
     position: absolute;
     top: 17%;
-    background: #000;
-    opacity:0.2;
+    /*background: #000;*/
+    opacity: 0.2;
     width: 90%;
     height: 38%;
     border-top-right-radius: 100px;
@@ -55,7 +192,8 @@ margin-right: 0px;
 
 
 }
-.global h6{
+
+.global h6 {
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: 700;
@@ -63,93 +201,108 @@ margin-right: 0px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.global ul{
+
+.global ul {
     list-style-type: none;
     line-height: 30px;
     font-size: 15px;
     margin-bottom: 0;
 }
-.global ul a{
+
+.global ul a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
-.global ul a:hover{
+
+.global ul a:hover {
     opacity: 0.8;
     color: #eee;
 }
-.global .social{
-    width:100%;
+
+.global .social {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding:40px;
+    padding: 40px;
     padding-bottom: 0px;
     border-top: 1px solid #eee;
     margin-top: 50px;
 }
-.global .social a{
+
+.global .social a {
     font-size: 22px;
     width: 45px;
     height: 45px;
     line-height: 39px;
-    display:inline-block;
+    display: inline-block;
     border-radius: 50px;
-    border:2px solid #05ff05;
+    border: 2px solid #05ff05;
     box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
     margin: 10px;
     color: #fff;
     opacity: 0.7;
     transition: 0.3s ease-in-out;
 }
-.global .social a:hover{
+
+.global .social a:hover {
     opacity: 0.9;
     box-shadow: 0px 1px 1px 2px rgba(255, 255, 255, 0.9);
 }
-.global .copyright{
+
+.global .copyright {
     text-align: center;
     padding-top: 24px;
     font-weight: 500;
     opacity: 0.8;
     font-size: 16px;
 }
-@media(max-width: 767px){
-    .global .curve{
+
+@media(max-width: 767px) {
+    .global .curve {
         left: 5%;
         height: 70%;
 
     }
-    .global h6{
+
+    .global h6 {
         margin: 0 auto;
         text-align: center;
         margin: 10px;
         margin-bottom: 10px;
-        
+
     }
-    .global ul{
+
+    .global ul {
         text-align: center;
 
     }
-    .social{
+
+    .social {
         margin: 0 auto;
     }
 }
-.carousel{
+
+.carousel {
     width: 100vw;
     height: 100vh;
-    position:relative ;
+    position: relative;
 }
-.carousel > ul{
-    margin:0;
+
+.carousel>ul {
+    margin: 0;
     padding: 0;
     list-style: none;
 }
-.slide{
+
+.slide {
     position: absolute;
-    inset:0;
+    inset: 0;
     opacity: 0;
     transition: 200ms opacity ease-in-out;
 }
-.slide > img{
+
+.slide>img {
     display: block;
     width: 100%;
     height: 100%;
@@ -157,17 +310,19 @@ margin-right: 0px;
     object-position: center;
     transition-delay: 200ms;
 }
-.slide[data-active]{
-    opacity:1;
+
+.slide[data-active] {
+    opacity: 1;
     transition-delay: 0ms;
     z-index: 1;
 }
-.carousel-button{
-    position:absolute;
+
+.carousel-button {
+    position: absolute;
     background: none;
-    border:none;
+    border: none;
     font-size: 4rem;
-    top:50px;
+    top: 50px;
     z-index: 2;
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.5);
@@ -176,18 +331,49 @@ margin-right: 0px;
     padding: 0 .5rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 .carousel-button:hover,
-.carousel-button:focus{
+.carousel-button:focus {
     color: rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.2);
 }
-.carousel-button:focus{
+
+.carousel-button:focus {
     outline: 1px solid black;
 
 }
-.carousel-button.prev{
+
+.carousel-button.prev {
     left: 1rem;
 }
-.carousel-button.next{
+
+.carousel-button.next {
     right: 1rem;
+}
+
+@keyframes anim {
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        left: 88%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1 {
+        font-size: 3.5 rem;
+    }
 }
