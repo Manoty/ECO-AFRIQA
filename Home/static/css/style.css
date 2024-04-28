@@ -21,16 +21,68 @@ section {
     background-position: center;
 }
 
-header {
-    position: relative;
+nav {
+    position: fixed;
+    left: 0;
     top: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 20px;
+    z-index: 1000;
+    background-color: rgba(80, 16, 219, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 255, 0.5);
+    
+}
+/*nav .sticky{
+    background: #4070f4;
+    padding: 15px 20px;
+
+}*/
+
+nav .nav-content{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    height:100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.nav-content .logo a{
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+nav .sticky .nav-content .logo a{
+    color: #fff;
+}
+.nav-content .nav-links{
+    display: flex;
     align-items: center;
 }
+.nav-content .nav-links li{
+    list-style: none;
+    margin: 0 8px;
 
+}
+.nav-links li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0e2431;
+    padding: 10px 4px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    color: #4070f4;
+}
+/*
+nav .sticky .nav-links li a{
+    color: #fff;
+}
+nav .sticky .nav-links li a:hover{
+    color: #0e2431;
+}
+*/
 .container {
     min-height: 100vh;
     width: 100%;
@@ -171,7 +223,6 @@ h1 span {
 
 .global {
     padding: 50px;
-    color: #f0f9ff;
     margin-top: 80px;
     background-image: url(../images/download\ \(6\).jpeg);
     background-repeat: no-repeat;
@@ -183,7 +234,7 @@ h1 span {
 .global .curve {
     position: absolute;
     top: 17%;
-    /*background: #000;*/
+    background: #000;
     opacity: 0.2;
     width: 90%;
     height: 38%;
@@ -196,8 +247,8 @@ h1 span {
 .global h6 {
     margin-top: 0;
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 800;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -256,6 +307,50 @@ h1 span {
     font-weight: 500;
     opacity: 0.8;
     font-size: 16px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.social {
+    flex: 1;
+
+}
+/*hr{
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}*/
+.footer-row.copyright {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
 }
 
 @media(max-width: 767px) {
@@ -322,7 +417,7 @@ h1 span {
     background: none;
     border: none;
     font-size: 4rem;
-    top: 50px;
+    top: calc(50% + 20px);
     z-index: 2;
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.5);
@@ -345,10 +440,12 @@ h1 span {
 
 .carousel-button.prev {
     left: 1rem;
+    transform: translate(-50%, -50%);
 }
 
 .carousel-button.next {
     right: 1rem;
+    transform: translate(50%, -50%);
 }
 
 @keyframes anim {

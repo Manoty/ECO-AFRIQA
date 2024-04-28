@@ -15,3 +15,15 @@ buttons.forEach(button => {
 
     })
 })
+
+let nav = document.querySelector("nav")
+window.addEventListener("scroll", ()=>{
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+        nav.style.backgroundColor = "rgba(64, 112, 244, 0.8)";
+    }else{
+        nav.classList.remove("sticky");
+        nav.style.backgroundColor = "transparent";
+    }
+
+});
