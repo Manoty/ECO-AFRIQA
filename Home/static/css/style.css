@@ -215,6 +215,18 @@ h1 span {
 
 }
 
+/*counter section*/
+.wrapper {
+    background-color: #121317;
+    border: 1px solid white;
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+}
+
 /*Mission, vision, values section*/
 .mvv-container {
     max-width: 90%;
@@ -242,7 +254,8 @@ h1 span {
     transition: transform 0.3s;
     transform: scale(1);
 }
-.mvv-container .mvv-block .image:hover img{
+
+.mvv-container .mvv-block .image:hover img {
     transform: scale(1);
 
 }
@@ -287,6 +300,7 @@ h1 span {
     }
 }
 
+/*footer section*/
 .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -299,7 +313,7 @@ h1 span {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 1.0;
 }
 
 .global .curve {
@@ -396,6 +410,12 @@ h1 span {
     flex: 1;
     margin-right: 20px;
     /* Adjust margin as needed */
+}
+
+.footer-column h6 .footer-column p {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .social {
