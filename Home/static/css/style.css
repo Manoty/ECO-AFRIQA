@@ -25,7 +25,7 @@ header {
     position: absolute;
     width: 100%;
     min-height: 66px;
-    background-color: #43a5f6;
+    background-color: #c5def3;
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ header {
 }
 
 header .logo {
-    color: #fff;
+    color: #4CAF50;
     font-size: 1.75em;
     font-weight: 600;
     text-decoration: none;
@@ -52,7 +52,7 @@ header ul li {
 }
 
 header ul li a {
-    color: #fff;
+    color: #4CAF50;
     font-size: 1.1em;
     padding: 20px 25px;
     text-decoration: none;
@@ -62,7 +62,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background: #2b93e3;
+    background: #e4e7e9;
 
 }
 
@@ -176,7 +176,7 @@ header ul li ul li ul {
 
 
 h1 {
-    color: #fff;
+    color: #4CAF50;
     font-size: 5rem;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: transparent;
@@ -216,6 +216,7 @@ h1 span {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 80px;
+    width: 100%;
 
 
 }
@@ -223,7 +224,7 @@ h1 span {
 .service .card {
     height: 350px;
     width: 370px;
-    background-color: #1c2335;
+    background-color: #4CAF50;
     padding: 3% 8%;
     border: 0.2px solid rgb(114, 226, 174, 0.2);
     border-radius: 8px;
@@ -264,7 +265,7 @@ h1 span {
 }
 
 .service.card h2 {
-    color: #fff;
+    color: #4CAF50;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -384,7 +385,7 @@ h1 span {
 
 .blog-section .title h2 {
     font-size: 40px;
-    color: #357ca6;
+    color: #4CAF50;
     text-transform: uppercase;
     margin-top: 50px;
 }
@@ -418,7 +419,7 @@ h1 span {
 
 .card .content h4 {
     font-size: 24px;
-    color: #222;
+    color: #4CAF50;
     font-weight: 500;
 }
 
@@ -432,7 +433,7 @@ h1 span {
     color: #fff;
     margin-top: 12px;
     display: inline-block;
-    background-color: #3a706a;
+    background-color: #4CAF50;
     padding: 8px 15px;
 }
 
@@ -441,7 +442,7 @@ h1 span {
     top: 0;
     left: 0;
     display: inline-block;
-    background-color: #ada62b;
+    background-color: #4CAF50;
     padding: 6px 15px;
 }
 
@@ -471,7 +472,7 @@ h1 span {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     font-weight: 500;
-    color: var(#ff226f);
+    color: var(#4CAF50);
 }
 
 .cont-left p {
@@ -485,10 +486,8 @@ h1 span {
     outline: none;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(to right var(#ff226f),
-            var(#fe6769),
-        );
-    color: var(--white);
+    background: color(#4CAF50);
+    
     font-size: 1rem;
     cursor: pointer;
 }
@@ -568,11 +567,14 @@ h1 span {
 .global {
     padding: 50px;
     margin-top: 80px;
-    background-image: url(../images/download\ \(6\).jpeg);
+    /*background-image: url(../images/download\ \(6\).jpeg);
     background-repeat: no-repeat;
     background-position: center;
+    */
+    background-color: #4CAF50;
     background-size: cover;
     opacity: 1.0;
+    
 }
 
 .global .curve {
@@ -632,7 +634,7 @@ h1 span {
     line-height: 39px;
     display: inline-block;
     border-radius: 50px;
-    border: 2px solid #05ff05;
+    border: 2px solid #4CAF50;
     box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
     margin: 10px;
     color: #fff;
@@ -837,7 +839,7 @@ h1 span {
 }
 
 .counter-wrapper {
-    background: url(../images/pexels-elevate-1269029.jpg);
+    background-color: #4CAF50;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
