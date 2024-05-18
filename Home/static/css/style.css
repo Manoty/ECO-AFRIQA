@@ -105,11 +105,11 @@ header ul li ul li ul {
         display: none;
     }
 
-    header.active nav {
+    header.active ul {
         display: initial;
     }
 
-    header nav ul li {
+    header ul li {
         width: 100%;
     }
 
@@ -120,7 +120,7 @@ header ul li ul li ul {
     }
 
     header ul li ul li ul {
-        top: o;
+        top: 0;
         left: 0;
     }
 
@@ -487,7 +487,7 @@ h1 span {
     border: none;
     border-radius: 5px;
     background: color(#4CAF50);
-    
+
     font-size: 1rem;
     cursor: pointer;
 }
@@ -574,7 +574,7 @@ h1 span {
     background-color: #4CAF50;
     background-size: cover;
     opacity: 1.0;
-    
+
 }
 
 .global .curve {
@@ -838,71 +838,48 @@ h1 span {
     }
 }
 
-.counter-wrapper {
-    background-color: #4CAF50;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 10rem 9%;
-    margin-top: 5rem;
-    position: relative;
-}
+/* styles.css */
 
-.counter-wrapper::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+.container {
+    text-align: center;
+    margin-top: 50px;
 }
 
 .counter {
-    text-align: center;
-    color: #fff;
-    z-index: 2;
-    position: relative;
-
-
+    font-size: 4rem;
+    margin-bottom: 30px;
 }
 
-.counter::before {
-    position: absolute;
-    content: '';
-    bottom: -2rem;
-    left: 50%;
-    width: 20%;
-    height: .2rem;
-    background: #4db7fe;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-
+.metrics {
+    display: flex;
+    justify-content: center;
 }
 
-.counter .count {
-    font-size: 5rem;
-    margin-bottom: 1rem;
-
+.metric {
+    margin: 0 20px;
 }
 
-.counter p {
-    font-size: 1.4rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-
+.icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .counter-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 8rem;
-    }
+.description {
+    font-size: 1.2rem;
+    color: #555;
 }
 
-@media (max-width: 450px) {}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
