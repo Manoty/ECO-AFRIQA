@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'sans-serif';
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact {
@@ -43,7 +43,6 @@
     align-items: center;
     gap: 50px;
     margin-top: 30px;
-
 }
 
 .container .contactInfo {
@@ -61,12 +60,12 @@
 
 .container .contactInfo .box .icon {
     position: relative;
-    min-width: 60px;
+    width: 60px;
     height: 60px;
-    background: repeating-conic-gradient(from 30deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from 30deg, #4CAF50 0%, #4CAF50 10%, transparent 10%, transparent 50%);
     display: flex;
     justify-content: center;
-    align-self: centre;
+    align-items: center;
 
 }
 
@@ -74,8 +73,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: repeating-conic-gradient(from 117.5deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
-
+    background: repeating-conic-gradient(from 117.5deg, #4CAF50 0%, #4CAF50 10%, transparent 10%, transparent 50%);
 }
 
 .container .contactInfo .box .icon::after {
@@ -88,7 +86,7 @@
 .container .contactInfo .box .icon b {
     position: absolute;
     inset: 10px;
-    background: #01dbc2;
+    background: #4CAF50;
     z-index: 2;
 }
 
@@ -107,83 +105,75 @@
     font-size: 1.1em;
     color: #fff;
     font-family: 300;
-
 }
 
 .container .contactInfo .box .text h3 {
     font-weight: 500;
-    color: #01dbc2;
+    color: #4CAF50;
 }
 
 .container .contactInfo .txt {
     color: #fff;
     margin-top: 50px;
     font-weight: 500;
-    border-left: 50px solid #01dbc2;
+    border-left: 50px solid #4CAF50;
     padding-left: 10px;
     line-height: 1em;
-
 }
 
-.container .contactInfo .sci {
-    position: relative;
-    display: flex;
-    gap: 30px;
-    margin: 20px 0;
-
-}
-
-.container .contactInfo .sci li {
-    list-style: none;
-}
-
-.container .contactInfo .sci li a {
-    color: #fff;
-    font-size: 1.5em;
-    transition: 0.25;
-
-}
-
-.container .contactInfo .sci li a:hover {
-    color: #01dbc2;
-    filter: drop-shadow(0 0 5px #01dbc2);
-}
-
-/*
-.container .social-media{
+.container .contactInfo .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 20px 0;
+    margin: 20px;
 }
-.container .social-media .sci {
+
+.container .contactInfo .social-media .icons {
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center the icons horizontally */
+    gap: 30px;
+    /* Add gap between icons */
+}
+
+.container .contactInfo .social-media .icons .sci {
+    list-style: none;
+}
+
+.container .contactInfo .social-media ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.container .social-media .sci a {
-    display: inline-flex;  
-}*/
+.container .contactInfo .social-media ul li a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: 0.25s;
+}
+
+.container .contactInfo .social-media ul li a:hover {
+    color: #4CAF50;
+    filter: drop-shadow(0 0 5px #4CAF50);
+}
+
 .container .contactform {
     position: relative;
     width: 40%;
     padding: 60px;
-    background: repeating-conic-gradient(from var(--a), #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from var(--a), #4CAF50 0%, #4CAF50 10%, transparent 10%, transparent 50%);
     overflow: hidden;
-
-
 }
 
 .container .contactform::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: repeating-conic-gradient(from 0deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from 0deg, #4CAF50 0%, #4CAF50 10%, transparent 10%, transparent 50%);
     animation: animate 6s linear infinite;
     animation-delay: -1.5s;
-
 }
 
 .container .contactform::after {
@@ -234,11 +224,10 @@
     font-size: 1.1em;
     border: none;
     background: transparent;
-    border-bottom: 2px solid #01dbc2;
+    border-bottom: 2px solid #4CAF50;
     color: #fff;
     outline: none;
     resize: none;
-
 }
 
 .container .contactform form .inputBox span {
@@ -256,14 +245,14 @@
 .container .contactform form .inputBox textarea:focus~span,
 .container .contactform form .inputBox input:valid~span,
 .container .contactform form .inputBox textarea:valid~span {
-    color: #01dbc2;
+    color: #4CAF50;
     font-size: 0.9em;
     transform: translateY(-24px);
 }
 
 .container .contactform form .inputBox input[type="submit"] {
     width: 100px;
-    background: #01dbc2;
+    background: #4CAF50;
     color: #222;
     border: none;
     cursor: pointer;
@@ -277,13 +266,16 @@
         flex-direction: column;
     }
 
-    .container .contactInfo, .container .contactform {
+    .container .contactInfo,
+    .container .contactform {
         width: 100%;
     }
-    .container .contactform{
+
+    .container .contactform {
         padding: 40px;
     }
-    .container .contactform form{
+
+    .container .contactform form {
         padding: 10px;
     }
 }

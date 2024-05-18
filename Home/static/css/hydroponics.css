@@ -1,106 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
-
-
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-
+    font-family: 'Poppins', sans-serif;
 }
 
-.section {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ddd;
+body {
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-.container {
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 100px;
+/* Garden Detail Section */
+.garden-detail {
+    padding: 50px 20px;
+    background-color: #fff;
 }
 
-.content-section {
-    float: left;
-    width: 55%;
+.garden-detail .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.image {
-    float: right;
-    width: 40%;
+.garden-detail h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
 }
 
-.image img {
+.garden-detail p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.garden-detail h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
     width: 100%;
     height: auto;
 }
 
-.content-section .title {
-    text-transform: uppercase;
-    font-size: 28px;
+.gallery-item:hover {
+    transform: translateY(-10px);
 }
 
-.content-section .content h3 {
-    margin-top: 20px;
-    color: #5d5d5d;
-    font-size: 21px;
-}
-
-.content-section.content p {
-    margin-top: 10px;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-
-}
-
-.content-section.content .button {
+.cta {
     margin-top: 30px;
 }
 
-.content-section.content .button a {
-    background-color: #0f0b0b;
-    padding: 12px 40px;
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
     text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    letter-spacing: 1.5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.content-section .button a:hover {
-    background-color: #a52a2a;
-    color: #fff;
+.cta-button:hover {
+    background-color: #45a049;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 50px;
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
     }
+}
 
-    .content-section {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
-
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
     }
-
-    .content-section .title {
-        text-align: center;
-        font-size: 19px;
-    }
-
-    .content-section.content .button {
-        text-align: center;
-    }
-
-    .content-section.content .button a {
-        padding: 9px 30px;
-    }
-
 }

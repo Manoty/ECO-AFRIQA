@@ -1,56 +1,56 @@
-/* Add this CSS in your balcony_rooftop_styles.css file */
+/* Add this CSS at the bottom of your existing CSS file */
 
-.balcony-rooftop {
+.chicken-tunnels {
     padding: 50px 100px;
     text-align: center;
 }
 
-.balcony-rooftop .content {
+.chicken-tunnels .content {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
-.balcony-rooftop .content h2 {
+.chicken-tunnels .content h2 {
     font-size: 3em;
     color: #4CAF50;
     margin-bottom: 20px;
 }
 
-.balcony-rooftop .content p {
+.chicken-tunnels .content p {
     font-size: 1.3em;
     color: #555;
 }
 
-.garden-description {
+.tunnel-description {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 50px;
     text-align: left;
 }
 
-.garden-description h3 {
+.tunnel-description h3 {
     font-size: 2em;
     color: #4CAF50;
     margin-bottom: 20px;
 }
 
-.garden-description p {
+.tunnel-description p {
     font-size: 1em;
     color: #555;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
-.garden-images {
+.tunnel-images {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.garden-images img {
-    max-width: 100%;
+.tunnel-images img {
+    width: 300px;
     height: auto;
     border-radius: 8px;
 }
@@ -74,19 +74,3 @@
 .cta-button:hover {
     background-color: #45a049;
 }
-/* Add this CSS in your balcony_rooftop_styles.css file */
-
-.garden-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    
-}
-
-.garden-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Other CSS styles remain the same */
