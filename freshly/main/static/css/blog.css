@@ -1,0 +1,79 @@
+/* Reset default margins and paddings */
+body,
+
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    padding-top: 10px;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Blog section */
+.blog-section {
+    margin-top: 50px;
+    /* Adjust margin as needed */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Blog cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+.card a.read-more {
+    display: inline-block;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card a.read-more:hover {
+    text-decoration: underline;
+}

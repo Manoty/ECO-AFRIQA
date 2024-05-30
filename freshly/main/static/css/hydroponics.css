@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Garden Detail Section */
+.garden-detail {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.garden-detail .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.garden-detail h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.garden-detail p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.garden-detail h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}

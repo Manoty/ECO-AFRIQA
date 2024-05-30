@@ -1,0 +1,259 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<!--start of hero section -->
+<section>
+    <section aria-label="services">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="../static/images/jonathan-kemper-oHCalaoeD0Q-unsplash.jpg">
+                </li>
+                <li class="slide">
+                    <img src="../static/images/markus-spiske-4PG6wLlVag4-unsplash.jpg">
+                </li>
+                <li class="slide">
+                    <img src="../static/images/kelly-sikkema-iu3MkDoQXDM-unsplash.jpg" alt="Vertical farming">
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+    <!--start of services section-->
+
+    <section>
+        <div class="serv-container">
+            <div class="service-wrapper">
+                <div class="service">
+                    <h1>Our Gardens <span></span></h1>
+                    <div class="serv-cards">
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="../static/images/balcony-garden/download (10).jpeg" alt="Kitchen Gardens">
+                                <div class="image-text">Kitchen Gardens</div>
+                            </div>
+                            <h2>Kitchen Gardens</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
+                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
+                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="../static/images/aquaponics/Hydroponics.jpeg" alt="Aquaponics">
+                                <div class="image-text">Aquaponics</div>
+                            </div>
+                            <h2>Aquaponics</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
+                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
+                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="../static/images/chunnels/A Chicken 'Chunnel' Is Exactly What Your Backyard Birds Need This Spring.jpeg"
+                                    alt="Permaculture">
+                                <div class="image-text">Permaculture</div>
+                            </div>
+                            <h2>Permaculture</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
+                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
+                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="images/chicken-tunnels.jpg" alt=v"Chicken Tunnels">
+                                <div class="image-text">Chicken Tunnels</div>
+                            </div>
+                            <h2>Chicken Tunnels</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
+                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
+                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="images/consumer-education.jpg" alt="Consumer Education">
+                                <div class="image-text">Consumer Education</div>
+                            </div>
+                            <h2>Consumer Education</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
+                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
+                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="images/other.jpg" alt="Other">
+                                <div class="image-text">Other</div>
+                            </div>
+                            <h2>Other</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
+                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
+                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end of services section-->
+
+    <!--start of countersection-->
+    <div class="cont-container">
+        <div class="counter" id="counter">0</div>
+        <div class="metrics">
+            <div class="metric">
+                <div class="icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="description">Harvested</div>
+            </div>
+            <div class="metric">
+                <div class="icon">
+                    <i class="fas fa-carrot"></i>
+                </div>
+                <div class="description">Food Grown</div>
+            </div>
+            <div class="metric">
+                <div class="icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="description">Fresh Food Produced</div>
+            </div>
+            <div class="metric">
+                <div class="icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="description">Income Generated</div>
+            </div>
+        </div>
+        <button id="startButton">Start Counter</button>
+    </div>
+
+
+
+    <!--end of counter section-->
+
+    
+    <!-- Testimonials section start-->
+    <section>
+        <div class="cont">
+            <div class="cont-left">
+                <h1>Read what our clients love about us</h1>
+                <p>Over 300 companies from diverse sectors consult us to enhance the ux of their products and
+                    services
+                </p>
+                <p>We have helped companies icrease their customer base and generate multifold revenue with our
+                    service
+                </p>
+                <button>Read our success stories</button>
+            </div>
+            <div class="cont-right">
+                <div class="test-card">
+                    <img src="../static/images/pexels-billsalazar-17836197.jpg" alt="user">
+                    <div class="test-card-contents">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="test-card-details">
+                            <p>We had a great time collaborating withj the filament team. They have my high
+                                recommendation!</p>
+                            <h4>Thomas Onami Manoti</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <img src="../static/images/pexels-michael-burrows-7125555.jpg" alt="user">
+                    <div class="test-card-contents">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="test-card-details">
+                            <p>We had a great time collaborating withj the filament team. They have my high
+                                recommendation!</p>
+                            <h4>Omwamba Dennis Mogusu</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-card">
+                    <img src="../static/images/pexels-zen-chung-5529528.jpg" alt="user">
+                    <div class="test-card-contents">
+                        <span><i class="ri-double-quotes-l"></i></span>
+                        <div class="test-card-details">
+                            <p>We had a great time collaborating withj the filament team. They have my high
+                                recommendation!</p>
+                            <h4>Clement Ondieki Manoti</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials section end-->
+    <hr>
+    <!--News and blog section end-->
+    <section class="container">
+        <div class="blog-section">
+            <div class="title">
+                <h2>Blog & News</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. debitiPorros nihil dolorem distinctio
+                    eos cupiditate pariatur cum ipsum quibusdam natus itaque laborum delen</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="../static/images/pexels-greta-hoffman-7728353.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h4>Hydroponic Agric.</h4>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat est praesentium
+                            repudiandae neque, quasi explicabo animi officia ducimus id voluptates exercitationem
+                            possimus </p>
+                        <a href="">Read More</a>
+                    </div>
+                    <div class="posted-date">
+                        <p>Feb 19, 2024</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="../static/images/pexels-pixabay-39511.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h4>Urban Farming</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat est praesentium
+                            repudiandae neque, quasi explicabo animi officia ducimus id voluptates exercitationem
+                            possimus </p>
+                        <a href="">Read More</a>
+                    </div>
+                    <div class="posted-date">
+                        <p>Aug 17, 2023</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-section">
+                        <img src="../static/images/pexels-pixabay-39511.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h4>Sustainability</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat est praesentium
+                            repudiandae neque, quasi explicabo animi officia ducimus id voluptates exercitationem
+                            possimus </p>
+                        <a href="">Read More</a>
+                    </div>
+                    <div class="posted-date">
+                        <p>Dec 7, 2023</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--News and blog section end-->
+    
+
+
+    {%endblock%}

@@ -1,0 +1,52 @@
+#open-whatsapp-chat-btn {
+    background-color: #25D366;
+    /* WhatsApp green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#chatbot-widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+    /* Hide the chatbot widget by default */
+}
+
+#chatbot-widget {
+    background-color: #f0f0f0;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    width: calc(100% - 80px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #25D366;
+    /* WhatsApp green */
+    color: #fff;
+    cursor: pointer;
+}

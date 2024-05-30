@@ -1,0 +1,41 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block content %}
+    <main class="container">
+        <section class="blog-section">
+            <h1 class="section-title">Our Blogs</h1>
+            <div class="cards" id="blogCards">
+                <!-- Sample Blog Posts -->
+                <div class="card">
+                    <img src="{% static 'images/blog1.jpg' %}" alt="Blog Image">
+                    <div class="card-content">
+                        <h2>Blog Post Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo eros ac ante eleifend, ut ultricies neque feugiat.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{% static 'images/blog2.jpg' %}" alt="Blog Image">
+                    <div class="card-content">
+                        <h2>Blog Post Title 2</h2>
+                        <p>Donec sed erat nec odio scelerisque consectetur. Nam varius elit vel aliquet vehicula.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{% static 'images/blog3.jpg' %}" alt="Blog Image">
+                    <div class="card-content">
+                        <h2>Blog Post Title 3</h2>
+                        <p>Curabitur placerat, nunc eget ullamcorper rhoncus, sapien leo fermentum odio.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- End Sample Blog Posts -->
+            </div>
+        </section>
+    </main>
+    <script src="{% static 'js/blog.js' %}"></script>
+{% endblock %}
