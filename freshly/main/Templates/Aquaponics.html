@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'master.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquaponics Garden</title>
-    <link rel="stylesheet" href="../static/css/aquaponics.css">
-</head>
-
+{% block content %}
 <body>
     <section class="aquaponics-garden">
         <div class="content">
@@ -35,5 +29,4 @@
         </div>
     </section>
 </body>
-
-</html>
+{% endblock%}

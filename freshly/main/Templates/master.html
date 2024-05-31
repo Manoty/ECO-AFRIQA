@@ -8,21 +8,23 @@
       content="{% block meta_description %}width=device-width, initial-scale=1.0{% endblock %}"
     />
 
-    <title>{% block title%}FRESHLY{% endblock%}</title>
+    <title>{% block title %}FRESHLY{% endblock %}</title>
 
-    <!--CSS-->
+    <!-- Common CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
+    <!-- Placeholder for additional CSS files from child templates -->
+    {% block extra_css %}{% endblock %}
+
+    <!-- External libraries -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <!--box-icon css-->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!--remix-icon css-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -30,7 +32,7 @@
   </head>
 
   <body>
-    <!--start of nav section-->
+    <!-- Start of nav section -->
     <header>
       <a href="{% url 'home' %}" class="logo">FRESHLY</a>
       <div class="menu-Toggle"></div>
@@ -55,7 +57,7 @@
             </ul>
           </li>
           <li>
-            <a href="{% url 'blogs' %}">BLOGS <b></b></a>
+            <a href="{% url 'blogs' %}">BLOGS</a>
           </li>
           <li>
             <a href="#">GARDENS<b>▼</b></a>
@@ -73,7 +75,7 @@
         </ul>
       </nav>
     </header>
-    {%block content%} {%endblock%}
+    {% block content %}{% endblock %}
     <!-- Start of Footer Section -->
     <footer>
       <div class="global">
@@ -142,7 +144,7 @@
       <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
 
-    <!--javascript-->
+    <!-- JavaScript -->
     <script src="{% static 'js/script.js' %}" defer></script>
   </body>
 </html>

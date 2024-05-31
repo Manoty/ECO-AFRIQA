@@ -1,5 +1,9 @@
 {% extends 'master.html' %}
+{% block title %}Blogs - FRESHLY{% endblock %}
 {% load static %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
 
 {% block content %}
     <main class="container">

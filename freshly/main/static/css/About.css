@@ -69,7 +69,7 @@ ol {
     margin-bottom: 20px;
 }
 
-footer {
+.foot {
     margin-top: 40px;
     text-align: center;
 }
@@ -110,20 +110,19 @@ button:hover {
     padding: 20px;
     position: relative;
     transition: background 0.5s;
+    text-align: center;
 }
 
 .profile-box img {
     width: 100px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border-radius: 4px;
-    transition: .5s;
+    margin: 0 auto;
+    border-radius: 50%;
+    
 
 }
 
 .profile-box h4 {
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 5px;
     color: #4CAF50;
 
@@ -135,7 +134,7 @@ small {
 
 .social-box {
     background: #4CAF50;
-    margin: 60px auto 20px;
+    margin: 20px auto ;
     text-align: center;
     border-radius: 3px;
 
@@ -156,10 +155,11 @@ small {
 
 .team-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 85%;
+    /*width: 85%;
     margin: auto;
+    */
 }
 
 .profile-box img:hover {
