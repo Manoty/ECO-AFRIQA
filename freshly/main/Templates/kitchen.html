@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen Gardens</title>
-    <link rel="stylesheet" href="../static/css/kitchen.css">
-</head>
-
-<body>
+{% extends 'master.html' %} {% block title %}Hydroponics - FRESHLY{% endblock %}
+{% block extra_css %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/kitchen.css' %}" />
+{% endblock %} {% block content %}
     <section class="kitchen-gardens">
         <div class="content">
             <h2>Kitchen Gardens</h2>
@@ -76,6 +70,4 @@
             <a href="#" class="cta-button">Start Your Garden Journey</a>
         </div>
     </section>
-</body>
-
-</html>
+{% endblock%}

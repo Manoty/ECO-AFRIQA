@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sale of Multistorey Garden Materials</title>
-  <link rel="stylesheet" href="../static/css/sales.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Sale of Multistorey Garden Materials</h1>
-    </div>
-  </header>
-
+{% extends 'master.html' %}
+{% block title %}Sales - FRESHLY{% endblock %}
+{%block extra_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/sales.css' %}" />
+{% endblock %} 
+{% block content %}
   <section class="products">
     <div class="container">
       <h2>Products Offered</h2>
@@ -71,12 +63,7 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
-    </div>
-  </footer>
 
-  <script src="../static/js/sales.js"></script>
-</body>
-</html>
+
+  <script src="{% static 'js/sales.js'%}"></script>
+{% endblock%}

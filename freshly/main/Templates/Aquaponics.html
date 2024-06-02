@@ -1,8 +1,10 @@
 {% extends 'master.html' %}
+{% block title %}Aquaponics - FRESHLY{% endblock %}
+{%block extra_css %}
 {% load static %}
-
+<link rel="stylesheet" href="{% static 'css/aquaponics.css' %}" />
+{% endblock %} 
 {% block content %}
-<body>
     <section class="aquaponics-garden">
         <div class="content">
             <h2>Aquaponics Garden</h2>
@@ -17,12 +19,12 @@
                 to grow both fish and vegetables.</p>
         </div>
         <div class="garden-images">
-            <img src="../static/images/aquaponics/cool bog addition.jpeg" alt="Aquaponics Garden 1">
-            <img src="../static/images/aquaponics/Recyclable cheap but effective aquaponics from plastic barrel.jpeg" alt="Aquaponics Garden 2">
-            <img src="../static/images/aquaponics/Mountain trout.jpeg" alt="Aquaponics Garden 3">
-            <img src="../static/images/aquaponics/Koi Aquaponics Setup - Why Build a Sustainable System.jpeg" alt="Aquaponics Garden 4">
-            <img src="../static/images/aquaponics/Easy beautiful DIY Aquaponics.jpeg" alt="Aquaponics Garden 5">
-            <img src="../static/images/aquaponics/Hydroponics.jpeg" alt="Aquaponics Garden 6">
+            <img src="{% static 'images/aquaponics/cool bog addition.jpeg'%}" alt="Aquaponics Garden 1">
+            <img src="{% static 'images/aquaponics/Recyclable cheap but effective aquaponics from plastic barrel.jpeg' %}" alt="Aquaponics Garden 2">
+            <img src="{% static 'images/aquaponics/Mountain trout.jpeg' %}" alt="Aquaponics Garden 3">
+            <img src="{% static 'images/aquaponics/Koi Aquaponics Setup - Why Build a Sustainable System.jpeg' %}" alt="Aquaponics Garden 4">
+            <img src="{% static 'images/aquaponics/Easy beautiful DIY Aquaponics.jpeg'%}" alt="Aquaponics Garden 5">
+            <img src="{% static 'images/aquaponics/Hydroponics.jpeg'%}" alt="Aquaponics Garden 6">
         </div>
         <div class="cta-container">
             <a href="#" class="cta-button">Start Your Aquaponics Garden</a>

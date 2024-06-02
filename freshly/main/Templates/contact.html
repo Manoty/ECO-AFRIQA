@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRESHLY</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/contact_styles.css">
-</head>
-
-<body>
+{% extends 'master.html' %}
+{% block title %}Contact - FRESHLY{% endblock %}
+{%block extra_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/contact_styles.css' %}" />
+{% endblock %} 
+{% block content %}
     <section class="contact">
         <div class="content">
             <h2>Contact Us</h2>
@@ -76,6 +71,4 @@
             </div>
         </div>
     </section>
-</body>
-
-</html>
+{%endblock%}

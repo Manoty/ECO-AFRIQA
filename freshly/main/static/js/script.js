@@ -22,40 +22,44 @@ menuToggle.onclick = function () {
     header.classList.toggle('active')
 };
 
-// script.js
+// JavaScript for auto-counting scroll
+let count = 0;
+let counterElement = document.getElementById('counter');
+let metricsSection = document.querySelector('.metrics');
+let isCounting = false;
 
-// Initialize counters
-let clientsCount = 100;
-let visitorsCount = 500;
-let awardsCount = 10;
-let produceCount = 50;
-
-// Function to increment counters
-function incrementCounter(counter) {
-    switch (counter) {
-        case 'clients':
-            clientsCount += 10;
-            break;
-        case 'visitors':
-            visitorsCount += 20;
-            break;
-        case 'awards':
-            awardsCount += 1;
-            break;
-        case 'produce':
-            produceCount += 5;
-            break;
-        default:
-            break;
-    }
-    updateCounters();
+function updateCounter() {
+    if (isCounting) return;
+    isCounting = true;
+    count++;
+    counterElement.innerText = count;
+    setTimeout(() => {
+        isCounting = false;
+    }, 100); // Adjust the delay to suit your needs
 }
 
-// Event listeners for button clicks
-document.getElementById('clients-button').addEventListener('click', () => incrementCounter('clients'));
-document.getElementById('visitors-button').addEventListener('click', () => incrementCounter('visitors'));
-document.getElementById('awards-button').addEventListener('click', () => incrementCounter('awards'));
-document.getElementById('produce-button').addEventListener('click', () => incrementCounter('produce'));
+function throttle(func, limit) {
+    let inThrottle;
+    return function () {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
+}
+
+function checkScroll() {
+    let metricsSectionRect = metricsSection.getBoundingClientRect();
+    if (metricsSectionRect.top < window.innerHeight && metricsSectionRect.bottom >= 0) {
+        updateCounter();
+    }
+}
+
+window.addEventListener('scroll', throttle(checkScroll, 100));
+
 
 
 // JavaScript for Chatbot Widget
@@ -73,3 +77,13 @@ chatbotButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
     chatbotPopup.style.display = 'none';
 });
+$('a[href^="#"]').on('click', function (event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+

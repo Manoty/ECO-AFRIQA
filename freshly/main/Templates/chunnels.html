@@ -1,29 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Tunnels</title>
-    <link rel="stylesheet" href="../static/css/chunnels.css">
-</head>
-<body>
-    <section class="chicken-tunnels">
-        <div class="content">
-            <h2>Chicken Tunnels</h2>
-            <p>Learn about the benefits of chicken tunnels and how to build one for your backyard poultry.</p>
-        </div>
-        <div class="tunnel-description">
-            <h3>What are Chicken Tunnels?</h3>
-            <p>Chicken tunnels, also known as chicken runs or chicken tractors, are portable enclosures that provide outdoor space for chickens to roam and forage while protecting them from predators. They allow chickens to graze on fresh grass and insects, improving their health and egg production.</p>
-        </div>
-        <div class="tunnel-images">
-            <img src="../static/images/chunnels/A Chicken 'Chunnel' Is Exactly What Your Backyard Birds Need This Spring.jpeg" alt="Chicken Tunnel 1">
-            <img src="../static/images/chunnels/download (17).jpeg" alt="Chicken Tunnel 2">
-            <img src="../static/images/chunnels/How To Build A DIY Chicken Tunnel In Your Backyard.jpeg" alt="Chicken Tunnel 3">
-        </div>
-        <div class="cta-container">
-            <a href="#" class="cta-button">Build Your Chicken Tunnel</a>
-        </div>
-    </section>
-</body>
-</html>
+{% extends 'master.html' %}
+{% block title %}About_Us - FRESHLY{% endblock %}
+{%block extra_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/chunnels.css' %}" />
+{% endblock %} 
+{% block content %}
+
+<section class="chicken-tunnels">
+  <div class="content">
+    <h2>Chicken Tunnels</h2>
+    <p>
+      Learn about the benefits of chicken tunnels and how to build one for your
+      backyard poultry.
+    </p>
+  </div>
+  <div class="tunnel-description">
+    <h3>What are Chicken Tunnels?</h3>
+    <p>
+      Chicken tunnels, also known as chicken runs or chicken tractors, are
+      portable enclosures that provide outdoor space for chickens to roam and
+      forage while protecting them from predators. They allow chickens to graze
+      on fresh grass and insects, improving their health and egg production.
+    </p>
+  </div>
+  <div class="tunnel-images">
+    <img
+      src="{% static 'images/chunnels/chunnel.jpeg'%}"
+      alt="Chicken Tunnel 1"
+    />
+    <img
+      src="{% static 'images/chunnels/download (17).jpeg'%}"
+      alt="Chicken Tunnel 2"
+    />
+    <img
+      src="{% static 'images/chunnels/How To Build A DIY Chicken Tunnel In Your Backyard.jpeg'%}"
+      alt="Chicken Tunnel 3"
+    />
+  </div>
+  <div class="cta-container">
+    <a href="#" class="cta-button">Build Your Chicken Tunnel</a>
+  </div>
+</section>
+{%endblock%}

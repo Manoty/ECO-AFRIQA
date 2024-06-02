@@ -1,12 +1,13 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-
 }
 
+/* Banner section */
 #banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #4CAF50), url(../images/Awesome\ garden\ layout.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #4CAF50), url('../images/Awesome garden layout.jpeg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -27,7 +28,7 @@
 
 .banner-txt h1 {
     font-size: 130px;
-    font-family: 'kaushan script', cursive;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .banner-txt p {
@@ -46,7 +47,7 @@
     margin: 0 10px;
     padding: 12px 0;
     color: #fff;
-    border: .5px solid wheat;
+    border: 0.5px solid wheat;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
@@ -61,7 +62,6 @@
     background: #fff;
     z-index: -1;
     transition: 0.5s;
-
 }
 
 .banner-btn a:hover span {
@@ -83,10 +83,10 @@
     }
 }
 
-/*features*/
 #feature {
     width: 100%;
-    padding: 70 0;
+    padding: 70px 0;
+    background: #f8f8f8;
 }
 
 .title-text {
@@ -129,27 +129,29 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    justify-content: space-between;
 }
 
 .features {
-    flex-basis: 50%;
+    flex-basis: 45%;
 }
 
 .features-img {
-    flex-basis: 50%;
+    flex-basis: 45%;
     margin: auto;
+    text-align: center;
 }
 
 .features-img img {
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
+    max-width: 400px;
 }
 
 .features h1 {
-    text-align: left;
     margin-bottom: 10px;
-    font-weight: 100;
+    font-weight: 600;
     color: #4CAF50;
 }
 
@@ -159,7 +161,7 @@
     margin-bottom: 40px;
 }
 
-.feature-icon .fas {
+.feature-icon {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -167,39 +169,32 @@
     border-radius: 8px;
     color: #4CAF50;
     border: 1px solid #4CAF50;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feature-text {
     padding: 0 20px;
-    text-align: initial;
 }
-
-
-
-
 
 @media screen and (max-width: 770px) {
     .title-text h1 {
         font-size: 35px;
     }
 
-    .features {
-        flex-basis: 100%;
-    }
-
+    .features,
     .features-img {
-        flex-basis: 50%;
-
+        flex-basis: 100%;
     }
 
     .features-img img {
         width: 100%;
-
     }
 }
 
-/*service*/
+
+
 #services {
     width: 100%;
     padding: 70px 0;
@@ -287,11 +282,10 @@ hr {
 
     .single-service:hover .service-desc {
         bottom: 25% !important;
-
     }
 }
 
-/*testimonials*/
+/* Testimonials section */
 #testimonial {
     width: 100%;
     padding: 70px 0;
@@ -313,7 +307,7 @@ hr {
     border-radius: 5px;
     box-shadow: 0 10px 20px 3px #00968814;
     cursor: pointer;
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
 .testimonial-col p {
@@ -352,41 +346,50 @@ hr {
     }
 }
 
-/*meetsection */
-#footer {
+/* Meet section */
+.footing {
     padding: 100px 0 20px;
     background: #efefef;
     position: relative;
 }
 
-.footer-row {
+.footing-row {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 10px;
 }
 
-.footer-left .footer-right {
+.footing-left,
+.footing-right {
     flex-basis: 45%;
-    padding: 10px;
+    padding: 10px 20px;
     margin-bottom: 20px;
+    padding: 10px 20px;
 }
-.footer-right{
+
+.footing-right {
     text-align: right;
 }
-.footer-row h1{
+
+.footing-row h1 {
     margin: 10px 0;
 }
-.footer-row p{
+
+.footing-row p {
     line-height: 35px;
 }
-.footer-left .fas .footer-right .fas{
+
+.footing-left .fas,
+.footing-right .fas {
     font-size: 20px;
     color: #4CAF50;
     margin: 10px;
 }
-.footer-img{
+
+.footing-img {
     max-width: 370px;
     opacity: 0.1;
     position: absolute;
@@ -394,4 +397,3 @@ hr {
     top: 35%;
     transform: translate(-50%, -50%);
 }
-

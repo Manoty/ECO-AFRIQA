@@ -12,13 +12,13 @@
             <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
             <ul data-slides>
                 <li class="slide" data-active>
-                    <img src="../static/images/jonathan-kemper-oHCalaoeD0Q-unsplash.jpg">
+                    <img src="{% static 'images/jonathan-kemper-oHCalaoeD0Q-unsplash.jpg'%}">
                 </li>
                 <li class="slide">
-                    <img src="../static/images/markus-spiske-4PG6wLlVag4-unsplash.jpg">
+                    <img src="{% static 'images/markus-spiske-4PG6wLlVag4-unsplash.jpg'%}">
                 </li>
                 <li class="slide">
-                    <img src="../static/images/kelly-sikkema-iu3MkDoQXDM-unsplash.jpg" alt="Vertical farming">
+                    <img src="{% static 'images/kelly-sikkema-iu3MkDoQXDM-unsplash.jpg'%}" alt="Vertical farming">
                 </li>
             </ul>
         </div>
@@ -35,64 +35,83 @@
                     <div class="serv-cards">
                         <div class="serv-card">
                             <div class="image-container">
-                                <img src="../static/images/balcony-garden/download (10).jpeg" alt="Kitchen Gardens">
-                                <div class="image-text">Kitchen Gardens</div>
+                                <img src="{% static 'images/aquaponics/Hydroponics.jpeg'%}" alt="Kitchen Gardens">
+                                <div class="image-text">Hydroponics</div>
                             </div>
-                            <h2>Kitchen Gardens</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
-                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
-                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                            <h2>Hydroponic Vertical Garden</h2>
+                            <p>Hydroponic systems grow plants in nutrient-rich water solutions without soil, often utilizing vertical towers or racks to maximize space.
+                                at Freshly towers are used in vertical hydroponic farms to grow a variety of crops, including lettuce, strawberries, and microgreens.</p>
                         </div>
                         <div class="serv-card">
                             <div class="image-container">
-                                <img src="../static/images/aquaponics/Hydroponics.jpeg" alt="Aquaponics">
+                                <img src="{% static 'images/aquaponics/Hydroponics.jpeg'%}" alt="Aquaponics">
                                 <div class="image-text">Aquaponics</div>
                             </div>
-                            <h2>Aquaponics</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
-                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
-                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                            <h2>Aquaponics Vertical Garden</h2>
+                            <p>Aquaponic systems integrate fish farming with plant cultivation, where fish waste provides nutrients for the plants, and the plants help filter and purify the water for the fish.
+                                Freshly incorporates aquaponics into its vertical farming system, growing greens, herbs, and fish in a closed-loop ecosystem.</p>
                         </div>
                         <div class="serv-card">
                             <div class="image-container">
-                                <img src="../static/images/chunnels/A Chicken 'Chunnel' Is Exactly What Your Backyard Birds Need This Spring.jpeg"
+                                <img src="{% static 'images/pexels-pixabay-39511.jpg'%}"
                                     alt="Permaculture">
-                                <div class="image-text">Permaculture</div>
+                                <div class="image-text">Living Walls</div>
                             </div>
-                            <h2>Permaculture</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
-                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
-                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                            <h2>Living Walls Garden</h2>
+                            <p>Living walls are vertical structures covered with plants, sometimes incorporating hydroponic or soil-based growing systems for urban agriculture.</p>
                         </div>
                         <div class="serv-card">
                             <div class="image-container">
-                                <img src="images/chicken-tunnels.jpg" alt=v"Chicken Tunnels">
+                                <img src="{% static 'images/chunnels/chunnel.jpeg'%}" alt="Chicken Tunnels">
+                                <div class="image-text">Vertical Tower Gardens</div>
+                            </div>
+                            <h2>Vertical Garden Towers</h2>
+                            <p>Vertical towers are freestanding structures with multiple planting pockets or shelves, allowing for efficient use of vertical space in urban environments.
+                                Freshly installs vertical garden towers in urban areas, providing opportunities for residents and businesses to grow their own food in limited spaces.</p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="{% static 'images/consultations/ren.jpeg'%}" alt="Consumer Education">
+                                <div class="image-text">Vertical soil-based</div>
+                            </div>
+                            <h2>Vertical soil-based Towers</h2>
+                            <p>Vertical farms that utilize traditional soil-based growing methods but in a vertical configuration, often with stacked planter systems or tiered beds.
+                                Freshly operates rooftop greenhouse farms in urban areas, using soil-based growing methods to produce a variety of leafy greens and herbs in vertically stacked beds.
+                                </p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="{% static 'images/hydroponic/coriander-4255400_1280.jpg'%}" alt="Other">
+                                <div class="image-text">Other</div>
+                            </div>
+                            <h2>Modular Vertical Garden</h2>
+                            <p>Modular systems allow for flexible configurations of vertical growing spaces, often using modular panels or containers that can be stacked or arranged as needed.Freshly Farms Co. offers customizable modular farming units that can be installed in urban environments, providing vertical growing spaces for a variety of crops.</p>
+                        </div>
+                        <div class="serv-card">
+                            <div class="image-container">
+                                <img src="{% static 'images/chunnels/chunnel.jpeg'%}" alt="Chicken Tunnels">
                                 <div class="image-text">Chicken Tunnels</div>
                             </div>
                             <h2>Chicken Tunnels</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
-                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
-                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                            <p>Chicken tunnels, also known as chicken runs or poultry tunnels, are enclosed pathways or structures that provide outdoor access and roaming space for chickens while protecting them from predators and other hazards</p>
                         </div>
                         <div class="serv-card">
                             <div class="image-container">
-                                <img src="images/consumer-education.jpg" alt="Consumer Education">
-                                <div class="image-text">Consumer Education</div>
+                                <img src="{% static 'images/chunnels/chunnel.jpeg'%}" alt="Chicken Tunnels">
+                                <div class="image-text">Chicken Tunnels</div>
                             </div>
-                            <h2>Consumer Education</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
-                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
-                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                            <h2>Aeroponic Vertical Gardens</h2>
+                            <p>Aeroponic systems suspend plants in air and mist their roots with a nutrient-rich solution, allowing for efficient nutrient uptake and oxygenation.
+                                Freshly grows leafy greens and herbs in vertically stacked trays in indoor facilities.</p>
                         </div>
                         <div class="serv-card">
                             <div class="image-container">
-                                <img src="images/other.jpg" alt="Other">
-                                <div class="image-text">Other</div>
+                                <img src="{% static 'images/chunnels/chunnel.jpeg'%}" alt="Chicken Tunnels">
+                                <div class="image-text">Chicken Tunnels</div>
                             </div>
-                            <h2>Other</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur laborum quae sunt
-                                qui excepturi nam et quibusdam dolorum! Neque quos, magni possimus nam excepturi
-                                exercitationem numquam voluptates qui reiciendis tempora?</p>
+                            <h2>Modular Vertical Aquaponic Garden.</h2>
+                            <p>This system combines vertical gardening with aquaponics, creating a closed-loop ecosystem where plants are grown in vertically stacked beds above fish tanks.
+                                The system features multiple tiers of growing beds arranged vertically, allowing for efficient use of space in urban environments.</p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +122,7 @@
     <!--end of services section-->
 
     <!--start of countersection-->
-    <div class="cont-container">
+    <section class="cont-container">
         <div class="counter" id="counter">0</div>
         <div class="metrics">
             <div class="metric">
@@ -131,8 +150,7 @@
                 <div class="description">Income Generated</div>
             </div>
         </div>
-        <button id="startButton">Start Counter</button>
-    </div>
+    </section>
 
 
 
@@ -154,35 +172,32 @@
             </div>
             <div class="cont-right">
                 <div class="test-card">
-                    <img src="../static/images/pexels-billsalazar-17836197.jpg" alt="user">
+                    <img src="{% static 'images/pexels-billsalazar-17836197.jpg'%}" alt="user">
                     <div class="test-card-contents">
                         <span><i class="ri-double-quotes-l"></i></span>
                         <div class="test-card-details">
-                            <p>We had a great time collaborating withj the filament team. They have my high
-                                recommendation!</p>
-                            <h4>Thomas Onami Manoti</h4>
+                            <p>The vertical garden from FRESHLY has transformed my small balcony into a lush garden. My yields have increased, and it’s so easy to manage!</p>
+                            <h4 >Sarah Owino </h4>
                         </div>
                     </div>
                 </div>
                 <div class="test-card">
-                    <img src="../static/images/pexels-michael-burrows-7125555.jpg" alt="user">
+                    <img src="{% static 'images/pexels-michael-burrows-7125555.jpg'%}" alt="user">
                     <div class="test-card-contents">
                         <span><i class="ri-double-quotes-l"></i></span>
                         <div class="test-card-details">
-                            <p>We had a great time collaborating withj the filament team. They have my high
-                                recommendation!</p>
-                            <h4>Omwamba Dennis Mogusu</h4>
+                            <p>Our students love the vertical garden! It's educational, sustainable, and fits perfectly in our limited space. Plus, the yields are impressive.</p>
+                            <h4>Omwamba Dennis</h4>
                         </div>
                     </div>
                 </div>
                 <div class="test-card">
-                    <img src="../static/images/pexels-zen-chung-5529528.jpg" alt="user">
+                    <img src="{% static 'images/pexels-zen-chung-5529528.jpg'%}" alt="user">
                     <div class="test-card-contents">
                         <span><i class="ri-double-quotes-l"></i></span>
                         <div class="test-card-details">
-                            <p>We had a great time collaborating withj the filament team. They have my high
-                                recommendation!</p>
-                            <h4>Clement Ondieki Manoti</h4>
+                            <p>I started growing spinach, kale, and onions using Freshly's vertical garden system, and since then, my farm's yield has significantly increased while saving space and water. It's simple to maintain and highly effective. Highly recommended!</p>
+                            <h4>Clementia Wachira</h4>
                         </div>
                     </div>
                 </div>
@@ -198,19 +213,16 @@
         <div class="blog-section">
             <div class="title">
                 <h2>Blog & News</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. debitiPorros nihil dolorem distinctio
-                    eos cupiditate pariatur cum ipsum quibusdam natus itaque laborum delen</p>
+                <p>Discover! In our Blog & News section, we sow the seeds of knowledge on sustainable food production. Join us as we delve into the world of urban agriculture, nurturing both communities and the planet through innovative farming practices. Let's cultivate a greener, healthier tomorrow together!</p>
             </div>
             <div class="cards">
                 <div class="card">
                     <div class="image-section">
-                        <img src="../static/images/pexels-greta-hoffman-7728353.jpg" alt="">
+                        <img src="{% static 'images/pexels-greta-hoffman-7728353.jpg'%}" alt="">
                     </div>
                     <div class="content">
                         <h4>Hydroponic Agric.</h4>
-                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat est praesentium
-                            repudiandae neque, quasi explicabo animi officia ducimus id voluptates exercitationem
-                            possimus </p>
+                         <p> Explore the Hydroponic Horizon: Join us in uncovering the future of farming! In this blog series, we navigate the innovative realm of hydroponics, where soilless cultivation meets unparalleled efficiency. From vertical gardens to advanced nutrient solutions, discover how hydroponics is revolutionizing the way we grow food, paving the path towards a more sustainable and bountiful future.</p>
                         <a href="">Read More</a>
                     </div>
                     <div class="posted-date">
@@ -219,13 +231,11 @@
                 </div>
                 <div class="card">
                     <div class="image-section">
-                        <img src="../static/images/pexels-pixabay-39511.jpg" alt="">
+                        <img src="{% static 'images/pexels-pixabay-39511.jpg'%}" alt="">
                     </div>
                     <div class="content">
                         <h4>Urban Farming</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat est praesentium
-                            repudiandae neque, quasi explicabo animi officia ducimus id voluptates exercitationem
-                            possimus </p>
+                        <p>Unleash the potential of your urban space! Dive into our urban farming blog series where we redefine the boundaries of agriculture. Discover how you can transform rooftops, balconies, and city corners into flourishing green havens, cultivating fresh produce and community connections right in the heart of the city. </p>
                         <a href="">Read More</a>
                     </div>
                     <div class="posted-date">
@@ -234,13 +244,11 @@
                 </div>
                 <div class="card">
                     <div class="image-section">
-                        <img src="../static/images/pexels-pixabay-39511.jpg" alt="">
+                        <img src="{% static 'images/pexels-pixabay-39511.jpg'%}" alt="">
                     </div>
                     <div class="content">
                         <h4>Sustainability</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat est praesentium
-                            repudiandae neque, quasi explicabo animi officia ducimus id voluptates exercitationem
-                            possimus </p>
+                        <p>Embrace the green ethos with us! In this blog series, we explore the essence of sustainability and its pivotal role in shaping a better future. From reducing carbon footprints to fostering eco-conscious habits, join us on a journey towards a more sustainable tomorrow. </p>
                         <a href="">Read More</a>
                     </div>
                     <div class="posted-date">

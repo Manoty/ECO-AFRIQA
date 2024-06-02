@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/installation.css">
-</head>
-
-<body>
+{% extends 'master.html' %}
+{% block title %}Contact - FRESHLY{% endblock %}
+{%block extra_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/installation.css' %}" />
+{% endblock %}
+{% block content %}
     <section id="banner">
         <img src="" alt="logo" class="logo">
         <div class="banner-txt">
@@ -68,68 +64,23 @@
                 </div>
             </div>
             <div class="features-img">
-                <img src="../static/images/../images/services/farmer.jpeg" alt="">
+                <img src="{% static 'images/services/farmer.jpeg'%}" alt="">
             </div>
         </div>
     </section>
     <!--service-->
-    <section id="services">
-        <div class="title-text">
-            <p>SERVICES</p>
-            <h1>We Provide Better</h1>
-        </div>
-        <div class="service-box">
-            <div class="single-service">
-                <img src="../static/images/services/Tree Installation.jpeg" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>Kitchen Gardens</h3>
-                    <hr>
-                    <p>Transform your diet with these popular kitchen gardens</p>
-                </div>
-            </div>
-            <div class="single-service">
-                <img src="../static/images/services/Tree Installation.jpeg" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>Kitchen Gardens</h3>
-                    <hr>
-                    <p>Transform your diet with these popular kitchen gardens</p>
-                </div>
-            </div>
-            <div class="single-service">
-                <img src="../static/images/services/Tree Installation.jpeg" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>Kitchen Gardens</h3>
-                    <hr>
-                    <p>Transform your diet with these popular kitchen gardens</p>
-                </div>
-            </div>
-            <div class="single-service">
-                <img src="../static/images/services/Tree Installation.jpeg" alt="">
-                <div class="overlay"></div>
-                <div class="service-desc">
-                    <h3>Kitchen Gardens</h3>
-                    <hr>
-                    <p>Transform your diet with these popular kitchen gardens</p>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
+    
     <!--Testimonial-->
     <section id="" testimonial>
         <div class="title-text">
             <p>TESTIMONIALS</p>
-            <h1>What Client Says</h1>
+            <h1>What Clients Says</h1>
 
         </div>
         <div class="testimonial-row">
             <div class="testimonial-col">
                 <div class="user">
-                    <img src="../static/images/founder.jpg" alt="">
+                    <img src="{% static 'images/founder.jpg'%}" alt="">
                     <div class="user-info">
                         <h4>Noty Kevz <i class="fab fa-twitter"></i></h4>
                         <small>@noty365</small>
@@ -141,7 +92,7 @@
             </div>
             <div class="testimonial-col">
                 <div class="user">
-                    <img src="../static/images/founder.jpg" alt="">
+                    <img src="{% static 'images/founder.jpg'%}" alt="">
                     <div class="user-info">
                         <h4>Noty Kevz <i class="fab fa-twitter"></i></h4>
                         <small>@noty365</small>
@@ -152,7 +103,7 @@
             </div>
             <div class="testimonial-col">
                 <div class="user">
-                    <img src="../static/images/founder.jpg" alt="">
+                    <img src="{% static 'images/founder.jpg'%}" alt="">
                     <div class="user-info">
                         <h4>Joyce Moraa <i class="fab fa-twitter"></i></h4>
                         <small>@sabina</small>
@@ -164,22 +115,21 @@
         </div>
     </section>
     <!--Meet section-->
-    <section id="footer">
-        <img src="../static/images/Awesome garden layout.jpeg" alt="" class="footer-img">
+    <section class="footing">
         <div class="title-text">
             <p>CONTACT</p>
             <h1>Visit Shop Today</h1>
 
         </div>
-        <div class="footer-row">
-            <div class="footer-left">
+        <div class="footing-row">
+            <div class="footing-left">
                 <h1>Opening Hours</h1>
                 <p><i class="fas fa-clock"></i>
                     Monday to Friday-9am to 7pm</p>
                 <p><i class="fas fa-clock"></i>
                     Saturday and Sunday-9am to 4pm</p>
             </div>
-            <div class="footer-right">
+            <div class="footing-right">
                 <h1>Get in Touch</h1>
                 <p>30 abc Park, Nairobi <i class="fas fa-map-marker-alt"></i>
                 </p>
@@ -190,6 +140,4 @@
             </div>
         </div>
     </section>
-</body>
-
-</html>
+{%endblock%}

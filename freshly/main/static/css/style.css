@@ -22,7 +22,7 @@
 }
 /*start of nav*/
 header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     min-height: 66px;
     background-color: #c5def3;
@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
+    z-index: 1000;
 }
 
 header .logo {
@@ -607,11 +607,16 @@ h1 span {
     margin-bottom: 1rem;
 }
 
-.test-card-details h4 {
+.test-card-details h4 h2 {
     text-align: right;
     color: var(#ff226f);
     font-size: 1rem;
     font-weight: 500;
+}
+
+.location {
+    font-style: italic;
+    color: #666;
 }
 
 @media (width < 1200px) {
@@ -857,49 +862,40 @@ footer .footer-row p {
 
 /* styles.css */
 
-.container {
+/* Your CSS styles here */
+.cont-container {
+    margin-top: 200px;
+    /* Adjust as needed */
     text-align: center;
-    margin-top: 50px;
 }
 
 .counter {
-    font-size: 4rem;
-    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .metrics {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .metric {
-    margin: 0 20px;
+    flex: 1;
 }
 
 .icon {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .description {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 14px;
+    color: #666;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #45a049;
-}
 
 /* Chatbot Widget Styles */
 .whatsapp-icon {
