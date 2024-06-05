@@ -1,6 +1,6 @@
-{% extends 'master.html'%}
+{% extends 'master.html'%} 
 {%load static%}
-{% load crispy_forms_tags %}
+{% load crispy_forms_tags %} 
 {% load crispy_forms_filters%} 
 {% block content%}
 
@@ -9,15 +9,14 @@
   rel="stylesheet"
 />
 <div class="d-flex col-3 flex-column m-auto">
-  
-  <form method="post" action="{% url 'registration' %}">
+  <form method="post" action="{% url 'login' %}">
     {% csrf_token %}
     <fieldset>
-      <legend class="border-bottom mb-4 mt-2">Register here!</legend>
+      <legend class="border-bottom mb-4 mt-2">Login here!</legend>
       {{ form|crispy }}
     </fieldset>
     <div class="form-group">
-      <input class="btn btn-info" value="register" type="submit" />
+      <input class="btn btn-info" value="login" type="submit" />
     </div>
   </form>
 </div>

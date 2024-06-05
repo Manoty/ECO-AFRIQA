@@ -26,7 +26,7 @@ header {
     width: 100%;
     min-height: 66px;
     background-color: #c5def3;
-    padding: 0 100px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +54,7 @@ header ul li {
 header ul li a {
     color: #4CAF50;
     font-size: 1.1em;
-    padding: 20px 25px;
+    padding: 20px 10px;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
