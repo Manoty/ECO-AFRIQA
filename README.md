@@ -1,5 +1,4 @@
-FreshlyFarm: Sustainable Food Production Platform
-FreshlyFarm is a sustainable food production platform designed to empower urban dwellers to become farmers and produce fresh, eco-friendly food using locally available resources. Our mission is to promote environmental stewardship, community resilience, and healthy food access through innovative urban farming solutions.
+Freshly is a sustainable food production platform designed to empower urban dwellers to become farmers and produce fresh, eco-friendly food using locally available resources. Our mission is to promote environmental stewardship, community resilience, and healthy food access through innovative urban farming solutions.
 
 Features
 
