@@ -1,6 +1,9 @@
+from rest_framework import viewsets
 from django.shortcuts import render, redirect
 from .forms import ProductForm
+from .models import Farmer
 from django.contrib import messages
+from .serializers import FarmerSerializer
 
 
 def products(request):
@@ -26,3 +29,8 @@ def add_products(request):
 
 def update_products(request):
     return render(request, "Products/update_products.html")
+
+
+class FarmerViewSet(viewsets.ModelViewSet):
+    queryset = Farmer.objects.all()
+    serializer_class = FarmerSerializer

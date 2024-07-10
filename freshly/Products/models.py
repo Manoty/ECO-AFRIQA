@@ -20,3 +20,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+# farmers to keep the database of them 
+class Farmer(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    phone = models.CharField(max_length=15)
+
+    def __str__(self):
+        return self.name
