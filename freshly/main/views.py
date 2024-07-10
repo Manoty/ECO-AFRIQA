@@ -1,7 +1,10 @@
 from django.shortcuts import render
+import os
+from django.conf import settings
 
 
 def home(request):
+    # Set up to get index file from react build folder
     return render(request, "index.html")
 
 
@@ -55,6 +58,7 @@ def balcon(request):
 
 def consultations(request):
     return render(request, "consultations.html")
+
 
 def sales(request):
     return render(request, "sales.html")

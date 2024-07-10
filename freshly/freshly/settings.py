@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "crispy_forms",
     "crispy_bootstrap4",
-    "Products"
+    "Products",
+
 ]
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -63,7 +64,8 @@ ROOT_URLCONF = "freshly.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        # Added build folder for React files
+        'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -87,7 +89,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "freshly",
         "USER": "root",
-        "PASSWORD": "N36/K4157@kev",
+        "PASSWORD": "Lawe2023",
         "HOST": "localhost",
         "PORT": "3306",
     }
@@ -132,7 +134,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'frontend', 'build', 'static'),
+]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # STATICFILES_DIRS = [
 # BASE_DIR  / "static",
@@ -145,4 +151,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = 'home'  # Redirect to the homepage after login
 LOGOUT_REDIRECT_URL = 'login'  # Redirect to the loginpage after logout
-
