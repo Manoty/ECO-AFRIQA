@@ -1,6 +1,7 @@
 .missionBg{
     display: flex;
     justify-content: center;
+    margin-top: 280px;
 }
 
 .missionLeft{
