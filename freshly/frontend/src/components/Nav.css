@@ -160,6 +160,10 @@ line-height: normal;
         display: flex; /* Show the navbar on larger screens */
     }
 
+    .navbarSmBg{
+        display: none;
+    }
+
     .navbarLine{
         margin-top: -27px;
 
