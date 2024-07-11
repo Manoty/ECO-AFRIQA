@@ -62,15 +62,16 @@ margin-top: 47px;
 @media (max-width: 768px) {
 
 .heroBg{
-    /* background: url('../../public//images/bgsm.png'); */
-    background-color: #008000;
+    background: url('../../public//images/small_bg_transparent.png')  no-repeat center center/cover;
+    /* background-color: #008000; */
     /* width: 439px; */
-    height: 447px;
+    height: 550px;
     margin-top: 52px;
     padding-left: 10px;
     padding-right: 10px;
-
-
+    padding-top:30px;
+    margin-top: 120px;
+    /* background-tran */
 }
 
 

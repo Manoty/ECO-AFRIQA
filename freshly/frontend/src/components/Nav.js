@@ -36,7 +36,7 @@ function Nav() {
 
         <nav className="navbarBg">
             {/* Logo */}
-            <img className="navbarLogo" src="/images/logo2.png" alt="NavLogo"/>
+            <img className={scrolled ? "navbarLogoScroll" : "navbarLogo"} src="/images/logo2.png" alt="NavLogo"/>
 
             {/* Nav Buttons */}
 

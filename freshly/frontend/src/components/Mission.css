@@ -1,7 +1,6 @@
 .missionBg{
     display: flex;
     justify-content: center;
-    margin-top: 280px;
 }
 
 .missionLeft{
@@ -118,4 +117,8 @@ line-height: 130%;
 
     }
     
+    .missionBg{
+        margin-top: 280px;
+
+    }
 }

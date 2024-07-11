@@ -1,4 +1,3 @@
-/* Base styles for the navbar */
 .navbarBg {
     display: flex;
     /* justify-content: space-between; */
@@ -10,8 +9,11 @@
     top: 0;
     z-index: 50;
     background: white;
-    width:100%
+    width:100%;
+    padding-bottom:26.1px
 }
+
+
 
 /* Navbar buttons */
 .navbarBtns {
@@ -51,23 +53,36 @@
     height: 10px; /* Change height to 10px */
 }
 
-/* Navbar logo */
+
+
 .navbarLogo {
     width: 120.433px;
     height: 138.48px;
-    padding-bottom: 26.1px;
+    transition: width 0.5s ease-out, opacity 0.5s ease-out, height 0.75s ease-out; /* Transition properties */
+    opacity: 1; /* Ensures the logo is visible initially */
+}
+
+.navbarLogoScroll {
+    width: 80px;
+    height: 80px; /* Adjust height if needed */
+    opacity: 1; /* Change the opacity for fade-in effect */
+    transition: width 0.5s ease-out, opacity 0.5s ease-out, height 0.75s ease-out; /* Transition properties */
 }
 
 /* Small screen Navbar */
 .navbarSmBg {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     max-width: 100vw;
     padding-left: 18px;
     padding-right:18px;
+    background: white;
     padding-top:22px;
     height:77px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 50;
 
 }
 
@@ -100,6 +115,7 @@ line-height: normal;
     width: 42px;
     height: 37px;
     margin-top: 14px;
+    cursor: pointer;
     /* margin-bottom: auto; */
 
 

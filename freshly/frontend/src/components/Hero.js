@@ -5,6 +5,7 @@ function Hero() {
     <div className="heroBg">
 
         <div className="heroComps">
+            {/* <img className="bgSm" src="/images/small_bg.png"/> */}
         {/* <div className="heroTest"></div> */}
 
             <h1 className="">Urbanization Farming and    
