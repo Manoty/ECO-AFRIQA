@@ -31,21 +31,21 @@ ECO-AFRIQA is an e-commerce farming platform built with Django, MySQL, and Djang
   
 # Steps
 
-1. # Clone the repository:
+1. Clone the repository:
 ```bash
-git clone https://github.com/Simacoder/ECO-AFRIQA.git
+    git clone https://github.com/Simacoder/ECO-AFRIQA.git
     cd ECO-AFRIQA
 ```
-2. # Create a virtual environment:
+2. Create a virtual environment:
 ```bash
 python -m venv env
 source env/bin/activate   # On Windows, use `env\Scripts\activate`
 ```
-3. # Install dependencies:
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-4. # Configure the database:
+4. Configure the database:
 ```bash
 Create a MySQL database and user as follows:
 CREATE DATABASE ecoafriqa_db;
@@ -66,17 +66,17 @@ DATABASES = {
             }
         }
 ```
-5. # Apply migrations:
+5. Apply migrations:
 ```bash
     python manage.py makemigrations
     python manage.py migrate
 ```
 
-6. # Create a superuser:
+6. Create a superuser:
 ```bash
 python manage.py createsuperuser
 ```
-7. # Run the development server:
+7. Run the development server:
 ```bash
     python manage.py runserver
 ```
