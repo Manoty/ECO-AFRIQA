@@ -1,0 +1,156 @@
+/* Base styles for the navbar */
+.navbarBg {
+    display: flex;
+    /* justify-content: space-between; */
+    padding-left: 67.48px;
+    padding-right: 77.14px;
+    padding-top: 31.42px;
+    /* margin: auto; */
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    background: white;
+    width:100%
+}
+
+/* Navbar buttons */
+.navbarBtns {
+    display: flex;
+    justify-self: end;
+    margin-left:40%;
+}
+
+.navbarBtn {
+    font-family: Inter;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    height: 35px;
+    width: 84px;
+    cursor: pointer;
+}
+
+.navbarTxt {
+    color: #008000;
+}
+
+
+
+/* Navbar underline effect */
+.navbarLine {
+    width: 109.005px;
+    background: #008000;
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.5s ease-out, height 0.75s ease-out; /* Transition properties */
+}
+
+.navbarTxt:hover + .navbarLine {
+    opacity: 1; /* Change opacity to 1 */
+    height: 10px; /* Change height to 10px */
+}
+
+/* Navbar logo */
+.navbarLogo {
+    width: 120.433px;
+    height: 138.48px;
+    padding-bottom: 26.1px;
+}
+
+/* Small screen Navbar */
+.navbarSmBg {
+    display: flex;
+    /* justify-content: space-between; */
+    max-width: 100vw;
+    padding-left: 18px;
+    padding-right:18px;
+    padding-top:22px;
+    height:77px;
+    align-items: center;
+
+}
+
+.navbarSmBtns{
+    display: flex;
+
+}
+
+.navbarSmBtn p {
+    color: #008000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.navbarLineSm{
+    width: 70px;
+    height: 5px;
+    background: #008000;
+}
+
+.navbarSmBtn:hover + .navbarLineSm {
+    opacity: 1; /* Change opacity to 1 */
+    height: 10px; /* Change height to 10px */
+}
+
+.menuIcon{
+    width: 42px;
+    height: 37px;
+    margin-top: 14px;
+    /* margin-bottom: auto; */
+
+
+
+}
+
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .navbarBg {
+        display: none; /* Hide the navbar on small screens */
+    }
+
+    .navbarBtn{
+        margin-left: 33px;
+    }
+
+    .navbarSmBtns{
+        margin-left: 49px;
+    }
+
+    .navbarBtn p {
+        color: #008000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .navbarLine{
+        width: 70px;
+        height: 5px;
+        margin-top: -16px;
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+    .navbarBg {
+        display: flex; /* Show the navbar on larger screens */
+    }
+
+    .navbarLine{
+        margin-top: -27px;
+
+    }
+
+    .navbarBtn{
+        margin-left: 59px;
+
+    }
+}

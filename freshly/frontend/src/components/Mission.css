@@ -1,0 +1,120 @@
+.missionBg{
+    display: flex;
+    justify-content: center;
+}
+
+.missionLeft{
+    display: block;
+
+}
+
+.missionTitle{
+    color: #008000;
+font-family: Inter;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: start;
+
+}
+.missionLeft p {
+flex-shrink: 0;
+color: var(--Secondary-text, #525560);
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+width: 552px;
+line-height: 130%; /* 26px */
+text-align: start;
+}
+
+.missionImg2{
+    margin-left: 0px;
+}
+
+.missionParagraph{
+    width: 552px;
+    display: block;
+}
+
+.missionRight{
+    display: block;
+}
+
+.missionRightBottom{
+    margin-top:34px;
+}
+.missionRight img{
+    width: 222px;
+    height:184px ;
+    background-size: cover;
+}
+
+/* Smaller Screens */
+
+@media (max-width: 768px) {
+
+    .missionBg{
+        display: block;
+    }
+
+    .missionBg h2{
+        color: #008000;
+        font-family: Inter;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+
+}
+
+.missionRight img{
+    width: 145.886px;
+    height:131.759px ;
+    background-size: cover;
+}
+
+.missionImg2{
+    margin-left: 38.11px;
+}
+
+
+
+.missionParagraph{
+    margin-left: auto;
+    margin-right: auto;
+    width: 312px;
+    
+    
+}
+.missionLeft p{
+    width: 312px;
+    font-family: "Josefin Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+    
+    
+}
+.missionTextWrapper{
+    display: flex;
+    justify-content: center;
+}
+}
+
+/* Larger Screens */
+@media (min-width: 769px) {
+    .missionImg2{
+        margin-left: 58px;
+    }
+
+    .missionRight{
+        margin-left: 10%;
+
+    }
+    
+}
